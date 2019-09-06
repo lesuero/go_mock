@@ -355,7 +355,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 
 
 func homePageUsers(w http.ResponseWriter, r *http.Request) {
-	time.Sleep(time.Millisecond*500)
+	time.Sleep(time.Millisecond*100)
 	fmt.Println(w, "Respuesta recibida")
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
@@ -364,7 +364,7 @@ func homePageUsers(w http.ResponseWriter, r *http.Request) {
 
 
 func homePageCountries(w http.ResponseWriter, r *http.Request) {
-	time.Sleep(time.Millisecond*500)
+	time.Sleep(time.Millisecond*11000)
 	fmt.Println(w, "Respuesta recibida")
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
